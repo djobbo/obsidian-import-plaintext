@@ -54,6 +54,7 @@ class ImportPlaintextSettingsTab extends PluginSettingTab {
 
     async display() {
         const { containerEl } = this
+        this.containerEl.empty()
 
         new Setting(containerEl)
             .setName("Supported file extensions")
