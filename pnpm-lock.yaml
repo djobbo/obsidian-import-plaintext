@@ -23,9 +23,6 @@ devDependencies:
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
-  crossenv:
-    specifier: 0.0.2-security
-    version: 0.0.2-security
   eslint:
     specifier: ^8.51.0
     version: 8.51.0
@@ -626,10 +623,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: true
-
-  /crossenv@0.0.2-security:
-    resolution: {integrity: sha512-Zet/ldwzo70I+vUnjM9yHCWo2iqK/RM2s2VnZDNPE/fN062UXYXGqu9Hd7HlhNVhnYGclPcjNoySWhug5lctHw==}
     dev: true
 
   /debug@4.3.4:

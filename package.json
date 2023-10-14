@@ -1,7 +1,7 @@
 {
   "name": "obsidian-import-plaintext",
   "version": "1.0.0",
-  "description": "",
+  "description": "Import plain text files other than .md as Obsidian notes",
   "main": "main.js",
   "scripts": {
     "ci:install": "pnpm install --frozen-lockfile",
@@ -20,7 +20,6 @@
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "cross-env": "^7.0.3",
-    "crossenv": "0.0.2-security",
     "eslint": "^8.51.0",
     "eslint-plugin-prettier": "^5.0.1",
     "obsidian": "https://github.com/obsidianmd/obsidian-api/tarball/master",
