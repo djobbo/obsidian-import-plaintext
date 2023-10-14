@@ -13,10 +13,21 @@ export default class ImportPlaintextPlugin extends Plugin {
     async onload() {
         super.onload()
         this.addSettingTab(new ImportPlaintextSettingsTab(this.app, this))
+        this.loadSettings()
+        this.reloadSupportedFileExtensions()
     }
 
     async onunload() {
         super.onunload()
+    }
+
+    reloadSupportedFileExtensions() {
+        this.registerExtensions(
+            this.settings.supportedFileExtensions
+                .split(",")
+                .map((ext) => ext.trim().replace(".", "")),
+            "markdown",
+        )
     }
 
     async loadSettings() {
@@ -29,13 +40,7 @@ export default class ImportPlaintextPlugin extends Plugin {
     }
 
     async saveSettings() {
-        this.registerExtensions(
-            this.settings.supportedFileExtensions
-                .split(",")
-                .map((ext) => ext.trim().replace(".", "")),
-            "markdown",
-        )
-
+        this.reloadSupportedFileExtensions()
         await this.saveData(this.settings)
     }
 }
