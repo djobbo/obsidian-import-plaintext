@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-import-plaintext",
+    "name": "Import Plaintext",
+    "version": "0.0.1",
+    "minAppVersion": "0.11.5",
+    "description": "Import plain text files other than .md as Obsidian notes",
+    "author": "djobbo",
+    "authorUrl": "https://github.com/djobbo/obsidian-import-plaintext",
+    "isDesktopOnly": false
+}

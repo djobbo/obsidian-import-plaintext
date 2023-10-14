@@ -1,0 +1,32 @@
+{
+  "name": "obsidian-import-plaintext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "ci:install": "pnpm install --frozen-lockfile",
+    "dev": "cross-env NODE_ENV=development rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript -w",
+    "build": "cross-env NODE_ENV=production rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "lint": "eslint --ext .ts,.js .",
+    "lint:fix": "eslint --ext .ts,.js . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "cross-env": "^7.0.3",
+    "crossenv": "0.0.2-security",
+    "eslint": "^8.51.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "obsidian": "https://github.com/obsidianmd/obsidian-api/tarball/master",
+    "prettier": "^3.0.3",
+    "rollup": "^4.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
